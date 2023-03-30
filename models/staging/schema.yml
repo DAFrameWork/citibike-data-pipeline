@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: staging
+    database: peerless-return-376206
+    schema: de_trips_data
+
+
+    tables:
+      - name: citibike_tripsdata1
