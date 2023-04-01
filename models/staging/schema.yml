@@ -2,9 +2,9 @@ version: 2
 
 sources:
   - name: staging
-    database: peerless-return-376206
-    schema: de_trips_data
+    database: charged-state-382320
+    schema: nyc_citibike_data
 
 
     tables:
-      - name: citibike_tripsdata1
+      - name: citibike_tripsdata
