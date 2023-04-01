@@ -23,7 +23,7 @@ cast(start_lng as numeric) as start_lng,
 cast(end_lat as numeric) as end_lat,				
 cast(end_lng as numeric) as end_lng				
 
-from {{source('staging','citibike_tripsdata1')}}
+from {{source('staging','citibike_tripsdata')}}
 where ride_id is not null and ride_id <> 'nan'
 and start_station_name is not null and start_station_name <> 'nan'
 and end_station_name is not null and end_station_name <> 'nan' 
