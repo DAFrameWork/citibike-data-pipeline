@@ -76,11 +76,11 @@ Following technologies are used in implementing this pipeline
 5. Run python code in Prefect folder
 - you have installed the required python packages in step 1, prefect should be installed with it. Confirm the prefect installation with following command
       ```bash
-      prefect --version
+        prefect --version
       ```
 - You can start the prefect server so that you can access the UI using the command below:
       ```bash
-       prefect orion start
+          prefect orion start
        ```
 - access the UI at: http://127.0.0.1:4200/
 - Then change out the blocks so that they are registered to your credentials for GCS and Big Query. This can be done in the Blocks options
