@@ -77,3 +77,24 @@ prefect orion start
 ```bash
   python citibike_data_pipeline.py
 ```
+- The python script will then store the data both in your GCS bucket and in Big Query
+
+5. Running the dbt flow
+- Create a dbt account and log in using dbt cloud [here](https://cloud.getdbt.com/)
+- Once logged in clone the repo for use 
+- in the cli at the bottom run the following command:
+```bash
+dbt run
+```
+- this will run all the models and create our final dataset "fact_citibike"
+
+
+6. On successful run , the linage of fact_citibike looks as below :
+
+<img width="1198" alt="Screen Shot 2023-04-03 at 9 48 37 PM" src="https://user-images.githubusercontent.com/10378935/229689763-fbd6c582-c435-4668-9c89-43072e07422b.png">
+
+
+7. Visualization 
+- You can now take the fact_citibike dataset and use it within Looker for visualizations.
+
+
