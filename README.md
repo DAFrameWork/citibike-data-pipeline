@@ -12,13 +12,13 @@
 
 Following technologies are used in implementing this pipeline
 
-* Cloud: GCP
-  * Data Lake: GCS
-  * Data warehouse: ### Big Query
-* Terraform: Infrastructure as code (IaC) - creates project configuration for GCP to bypass cloud GUI.
-* Workflow orchestration: Prefect
-* Data Transformation: DBT
-* Data Visualisation: looker data studio
+* Cloud: **GCP**
+  * Data Lake: **GCS**
+  * Data warehouse: **Big Query**
+* **Terraform**: Infrastructure as code (IaC) - creates project configuration for GCP to bypass cloud GUI.
+* Workflow orchestration: **Prefect**
+* Data Transformation: **DBT**
+* Data Visualisation: **looker data studio**
 
 
 ### Citibike Pipeline Architecture:
