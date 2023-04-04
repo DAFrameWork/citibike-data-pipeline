@@ -99,9 +99,9 @@ prefect orion start
 - Create a dbt account and log in using dbt cloud [here](https://cloud.getdbt.com/)
 - Once logged in clone the repo for use 
 - in the cli at the bottom run the following command:
-```bash
-dbt run
-```
+  ```bash
+  dbt run
+  ```
 - this will run all the models and create the final dataset called "fact_citibike"
 
 
