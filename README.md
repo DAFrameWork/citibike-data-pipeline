@@ -70,7 +70,10 @@ prefect orion start
 - You will then want to change out the blocks so that they are registered to your credentials for GCS and Big Query. This can be done in the Blocks options
 - You can keep the blocks under the same names as in the code or change them. If you do change them make sure to change the code to reference the new block name
 - Go back to the terminal and run:
+  ```bash
+  cd prefect/
+  ```
+- then run
 ```bash
-cd flows/
-python etl_gcs_player.py
+  python citibike_data_pipeline.py
 ```
