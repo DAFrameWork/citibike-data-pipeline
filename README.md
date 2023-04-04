@@ -1,18 +1,16 @@
 ## NYC Citibike-Data-Pipeline
 
 ### Overview:
-
+Citibike data pipeline is an automated pipeline which extracts data from (https://s3.amazonaws.com/tripdata/index.html) and stores the raw data into gcs bucket and bigquery. Stored data from bigquery will be transformed using dbt and transformed dataset will be used by looker data studio to develop visualizations for analytics purposes.
 
 
 ### Problem description:
-
-
-dataset of the project can be found [files of Citi Bike trip data](https://s3.amazonaws.com/tripdata/index.html)
-
-Project answers the below questions.
+Citi Bike is NYC’s official bike share program, designed to give residents and visitors a fun, affordable and convenient alternative to walking, taxis, buses and subways.Citi Bike of course think that biking is the best way to see NYC! It's a quick and affordable way to get all around the city, and it even allows you to sightsee along the way.Project answers the below questions.
+ 
 * Where do Citi Bikers ride? 
 * Which stations are most popular? 
 * What days of the week are most rides taken on? 
+* What are the total number of trips?
 
 
 
