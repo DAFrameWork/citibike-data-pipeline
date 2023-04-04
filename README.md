@@ -1,4 +1,4 @@
-# NYC Citibike-Data-Pipeline
+### NYC Citibike-Data-Pipeline
 
 Overview:
 
@@ -14,7 +14,7 @@ Technologies:
 Following technologies are used in implementing this pipeline
 
 Cloud: GCP 
-Data Lake: GCS 
+  Data Lake: GCS 
 Data warehouse: Big Query
 Terraform: Infrastructure as code (IaC) - creates project configuration for GCP to bypass cloud GUI.
 Workflow orchestration: Prefect
