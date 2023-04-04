@@ -10,9 +10,9 @@
 dataset of the project can be found [files of Citi Bike trip data](https://s3.amazonaws.com/tripdata/index.html)
 
 Project answers the below questions.
-Where do Citi Bikers ride? 
-Which stations are most popular? 
-What days of the week are most rides taken on? 
+* Where do Citi Bikers ride? 
+* Which stations are most popular? 
+* What days of the week are most rides taken on? 
 
 
 
