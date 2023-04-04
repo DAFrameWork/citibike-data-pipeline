@@ -80,9 +80,9 @@ Following technologies are used in implementing this pipeline
         prefect --version
       ```
 - You can start the prefect server so that you can access the UI using the command below:
-      ```bash
-          prefect orion start
-       ```
+   ```bash
+   prefect orion start
+   ```
 - access the UI at: http://127.0.0.1:4200/
 - Then change out the blocks so that they are registered to your credentials for GCS and Big Query. This can be done in the Blocks options
 - You can keep the blocks under the same names as in the code or change them. If you do change them make sure to change the code to reference the new block name
