@@ -102,7 +102,7 @@ prefect orion start
 ```bash
 dbt run
 ```
-- this will run all the models and create our final dataset called "fact_citibike"
+- this will run all the models and create the final dataset called "fact_citibike"
 
 
 7. On successful run , the linage of fact_citibike looks as below :
