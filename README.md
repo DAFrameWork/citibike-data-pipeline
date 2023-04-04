@@ -7,6 +7,14 @@
 ### Problem description:
 
 
+dateset of the project can be found here downloadable files of Citi Bike trip data
+
+Project answers the below questions.
+Where do Citi Bikers ride? 
+Which stations are most popular? 
+What days of the week are most rides taken on? 
+
+
 
 ### Technologies:
 
