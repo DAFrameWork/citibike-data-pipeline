@@ -41,9 +41,9 @@ Following technologies are used in implementing this pipeline
 
 2. Install the neccesary packages/pre-requisites for the project with the following command
 
-```bash
-pip install -r requirements.txt
-```
+   ```bash
+     pip install -r requirements.txt
+    ```
 
 3. Next you need to setup your Google Cloud environment
 - Create a Google Cloud Platform project, if you do not already have one(https://console.cloud.google.com/cloud-resource-manager)
@@ -54,54 +54,54 @@ pip install -r requirements.txt
 - Download the JSON credentials and save it somehwere you'll remember, which will be JSON key.
 - Install the [Google Cloud SDK](https://cloud.google.com/sdk/docs/install-sdk)
 - Configure the environment variable point to your GCP key(https://cloud.google.com/docs/authentication/application-default-credentials#GAC) and authenticate it using following commands
-```bash
-export GOOGLE_APPLICATION_CREDENTIALS=<path_to_your_credentials>.json
-gcloud auth application-default login
-```
+   ```bash
+     export GOOGLE_APPLICATION_CREDENTIALS=<path_to_your_credentials>.json
+     gcloud auth application-default login
+    ```
 
 4. Set up the infrastructure of the project using Terraform
 - If you do not have Terraform installed you can install it from [here](https://developer.hashicorp.com/terraform/downloads) and then add it to your PATH
 - Once donwloaded navigate to the terraform folder :
-```bash
-cd terraform/
-```
+    ```bash
+     cd terraform/
+    ```
 
 - then run the following commands to create your project infrastructure
-```bash
-terraform init
-terraform plan -var="project=<your-gcp-project-id>"
-terraform apply -var="project=<your-gcp-project-id>"
-```
+     ```bash
+      terraform init
+      terraform plan -var="project=<your-gcp-project-id>"
+      terraform apply -var="project=<your-gcp-project-id>"
+     ```
 
 5. Run python code in Prefect folder
 - you have installed the required python packages in step 1, prefect should be installed with it. Confirm the prefect installation with following command
-```bash
-prefect --version
-```
+      ```bash
+      prefect --version
+      ```
 - You can start the prefect server so that you can access the UI using the command below:
-```bash
-prefect orion start
-```
+      ```bash
+       prefect orion start
+       ```
 - access the UI at: http://127.0.0.1:4200/
 - Then change out the blocks so that they are registered to your credentials for GCS and Big Query. This can be done in the Blocks options
 - You can keep the blocks under the same names as in the code or change them. If you do change them make sure to change the code to reference the new block name
 - Go back to the terminal and run:
-  ```bash
-  cd prefect/
-  ```
+    ```bash
+     cd prefect/
+    ```
 - then run
-```bash
-  python citibike_data_pipeline.py
-```
+    ```bash
+     python citibike_data_pipeline.py
+    ```
 - The python script will then store the citibike data both in your GCS bucket and in Big Query
 
 6. Running the dbt flow
 - Create a dbt account and log in using dbt cloud [here](https://cloud.getdbt.com/)
 - Once logged in clone the repo for use 
 - in the cli at the bottom run the following command:
-  ```bash
-  dbt run
-  ```
+   ```bash
+    dbt run
+    ```
 - this will run all the models and create the final dataset called "fact_citibike"
 
 
