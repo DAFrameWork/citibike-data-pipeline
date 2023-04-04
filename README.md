@@ -75,10 +75,12 @@ Following technologies are used in implementing this pipeline
 
 5. Run python code in Prefect folder
 - you have installed the required python packages in step 1, prefect should be installed with it. Confirm the prefect installation with following command
+
       ```bash
         prefect --version
       ```
 - You can start the prefect server so that you can access the UI using the command below:
+ 
       ```bash
           prefect orion start
        ```
