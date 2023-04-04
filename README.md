@@ -60,13 +60,13 @@ gcloud auth application-default login
 ```
 
 4. Set up the infrastructure of the project using Terraform
-- If you do not have Terraform installed you can install it [here](https://developer.hashicorp.com/terraform/downloads) and then add it to your PATH
+- If you do not have Terraform installed you can install it from [here](https://developer.hashicorp.com/terraform/downloads) and then add it to your PATH
 - Once donwloaded navigate to the terraform folder :
 ```bash
 cd terraform/
 ```
 
--then run the following commands to create your project infrastructure
+- then run the following commands to create your project infrastructure
 ```bash
 terraform init
 terraform plan -var="project=<your-gcp-project-id>"
