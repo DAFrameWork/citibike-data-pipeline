@@ -13,14 +13,21 @@ Problem description:
 
 
 Technologies:
+
 Following technologies are used im implementing this pipeline
 
 Cloud: GCP
+
 Data Lake: GCS
+
 Data warehouse: Big Query
+
 Terraform: Infrastructure as code (IaC) - creates project configuration for GCP to bypass cloud GUI.
-Workflow orchestration: Prefect (docker)
-Transforming data: DBT
+
+Workflow orchestration: Prefect
+
+Data Transformation: DBT
+
 Data Visualisation: looker data studio
 
 
