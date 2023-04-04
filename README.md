@@ -5,7 +5,8 @@ Citibike data pipeline is an automated pipeline which extracts data from (https:
 
 
 ### Problem description:
-Citi Bike is NYC’s official bike share program, designed to give residents and visitors a fun, affordable and convenient alternative to walking, taxis, buses and subways. Citi Bike of course think that biking is the best way to see NYC! It's a quick and affordable way to get all around the city, and it even allows you to sightsee along the way. Project answers the below questions and helps bikers to explore the NYC.
+Citi Bike is NYC’s official bike share program, designed to give residents and visitors a fun, affordable and convenient alternative to walking, taxis, buses and subways. Citi Bike think that biking is the best way to see NYC! It's a quick and affordable way to get all around the city, and it even allows you to sightsee along the way. 
+Project answers the below questions and helps bikers to explore the NYC.
  
 * Where do Citi Bikers ride? 
 * Which stations are most popular? 
