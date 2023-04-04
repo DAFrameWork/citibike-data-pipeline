@@ -50,11 +50,15 @@ export GOOGLE_APPLICATION_CREDENTIALS=<path_to_your_credentials>.json
 gcloud auth application-default login
 ```
 
-3. Set up the infrastructure of the project using Teeraform
+3. Set up the infrastructure of the project using Terraform
 - If you do not have Terraform installed you can install it [here](https://developer.hashicorp.com/terraform/downloads) and then add it to your PATH
-- Once donwloaded run the following commands:
+- Once donwloaded navigate to the terraform folder :
 ```bash
 cd terraform/
+```
+
+-then run the following commands to create your project infrastructure
+```bash
 terraform init
 terraform plan -var="project=<your-gcp-project-id>"
 terraform apply -var="project=<your-gcp-project-id>"
