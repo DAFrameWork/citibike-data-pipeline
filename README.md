@@ -37,13 +37,15 @@ Following technologies are used in implementing this pipeline
 ## Setup to run the project
 
 
-1. Clone the repo and install the neccesary packages
+1. Clone the  git repo to your system
+
+2. Install the neccesary packages/pre-requisites for the project with the following command
 
 ```bash
 pip install -r requirements.txt
 ```
 
-2. Next you need to setup your Google Cloud environment
+3. Next you need to setup your Google Cloud environment
 - Create a Google Cloud Platform project, if you do not already have one(https://console.cloud.google.com/cloud-resource-manager)
 - Configure Identity and Access Management (IAM) for the service account, provide the following privileges: 
   * BigQuery Admin
@@ -57,7 +59,7 @@ export GOOGLE_APPLICATION_CREDENTIALS=<path_to_your_credentials>.json
 gcloud auth application-default login
 ```
 
-3. Set up the infrastructure of the project using Terraform
+4. Set up the infrastructure of the project using Terraform
 - If you do not have Terraform installed you can install it [here](https://developer.hashicorp.com/terraform/downloads) and then add it to your PATH
 - Once donwloaded navigate to the terraform folder :
 ```bash
@@ -71,12 +73,12 @@ terraform plan -var="project=<your-gcp-project-id>"
 terraform apply -var="project=<your-gcp-project-id>"
 ```
 
-4. Run python code in Prefect folder
-- you have installed the required python packages in step 1, prefect should be installed with it. Check the prefect installation with following command
+5. Run python code in Prefect folder
+- you have installed the required python packages in step 1, prefect should be installed with it. Confirm the prefect installation with following command
 ```bash
 prefect --version
 ```
-- You can setup the prefect server so that you can access the UI using the command below:
+- You can start the prefect server so that you can access the UI using the command below:
 ```bash
 prefect orion start
 ```
@@ -93,22 +95,22 @@ prefect orion start
 ```
 - The python script will then store the citibike data both in your GCS bucket and in Big Query
 
-5. Running the dbt flow
+6. Running the dbt flow
 - Create a dbt account and log in using dbt cloud [here](https://cloud.getdbt.com/)
 - Once logged in clone the repo for use 
 - in the cli at the bottom run the following command:
 ```bash
 dbt run
 ```
-- this will run all the models and create our final dataset "fact_citibike"
+- this will run all the models and create our final dataset called "fact_citibike"
 
 
-6. On successful run , the linage of fact_citibike looks as below :
+7. On successful run , the linage of fact_citibike looks as below :
 
 <img width="1198" alt="Screen Shot 2023-04-03 at 9 48 37 PM" src="https://user-images.githubusercontent.com/10378935/229689763-fbd6c582-c435-4668-9c89-43072e07422b.png">
 
 
-7. Visualization 
+8. Visualization 
 - You can now take the fact_citibike dataset and use it within Looker for visualizations.
 
 
