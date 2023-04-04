@@ -80,7 +80,6 @@ Following technologies are used in implementing this pipeline
         prefect --version
       ```
 - You can start the prefect server so that you can access the UI using the command below:
- 
       ```bash
           prefect orion start
        ```
