@@ -65,13 +65,16 @@ terraform apply -var="project=<your-gcp-project-id>"
 ```
 
 4. Run python code in Prefect folder
-- After installing the required python packages, prefect should be installed
+- you have installed the required python packages in step 1, prefect should be installed with it. Check the prefect installation with following command
+```bash
+prefect --version
+```
 - You can setup the prefect server so that you can access the UI using the command below:
 ```bash
 prefect orion start
 ```
 - access the UI at: http://127.0.0.1:4200/
-- You will then want to change out the blocks so that they are registered to your credentials for GCS and Big Query. This can be done in the Blocks options
+- Then change out the blocks so that they are registered to your credentials for GCS and Big Query. This can be done in the Blocks options
 - You can keep the blocks under the same names as in the code or change them. If you do change them make sure to change the code to reference the new block name
 - Go back to the terminal and run:
   ```bash
@@ -81,7 +84,7 @@ prefect orion start
 ```bash
   python citibike_data_pipeline.py
 ```
-- The python script will then store the data both in your GCS bucket and in Big Query
+- The python script will then store the citibike data both in your GCS bucket and in Big Query
 
 5. Running the dbt flow
 - Create a dbt account and log in using dbt cloud [here](https://cloud.getdbt.com/)
