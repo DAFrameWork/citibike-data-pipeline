@@ -121,7 +121,10 @@ Following technologies are used in implementing this pipeline
 
 7. On successful run , the linage of fact_citibike looks as below :
 
-<img width="1198" alt="Screen Shot 2023-04-03 at 9 48 37 PM" src="https://user-images.githubusercontent.com/10378935/229689763-fbd6c582-c435-4668-9c89-43072e07422b.png">
+
+<img width="1173" alt="image" src="https://user-images.githubusercontent.com/10378935/230152162-ca3e91d7-fa30-410c-b8c0-3a8794d74c69.png">
+
+
 
 
 8. Visualization 
