@@ -46,6 +46,9 @@ Following technologies are used in implementing this pipeline
 
 
 1. Clone the  git repo to your system
+   ```bash
+   git clone <your-repo-url>
+   ```
 
 2. Install the neccesary packages/pre-requisites for the project with the following command
 
