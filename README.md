@@ -120,6 +120,6 @@ Following technologies are used in implementing this pipeline
 
 
 8. Visualization 
-- You can now take the fact_citibike dataset and use it within Looker for visualizations.
+- You can now utilize the fact_citibike dataset and use it within Looker for visualizations.
 
 
