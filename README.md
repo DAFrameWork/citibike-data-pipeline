@@ -30,12 +30,12 @@ you can find the report [here](https://lookerstudio.google.com/s/lUSsqr0LbT4)
 
 Following technologies are used in implementing this pipeline
 
-* Cloud: **GCP**
-  * Data Lake: **GCS**
-  * Data warehouse: **Big Query**
-* **Terraform**: Infrastructure as code (IaC) - creates project configuration for GCP to bypass cloud GUI.
-* Workflow orchestration: **Prefect**
-* Data Transformation: **DBT**
+* Cloud: [Goggle Cloud Platform](https://cloud.google.com/)
+  * Data Lake: [Goggle Cloud Storage](https://cloud.google.com/storage)
+  * Data warehouse: [Google Big Query](https://cloud.google.com/bigquery)
+* [Terraform](https://www.terraform.io/): Infrastructure as code (IaC) - creates project configuration for GCP to bypass cloud GUI.
+* Workflow orchestration: [Prefect](https://www.prefect.io/)
+* Data Transformation: [DBT](https://www.getdbt.com/)
 * Data Visualisation: [Google Looker data studio](https://lookerstudio.google.com/u/0/navigation/reporting)
 
 
