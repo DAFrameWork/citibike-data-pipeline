@@ -15,6 +15,14 @@ Project answers the below questions and helps bikers to explore the NYC.
 
 
 
+![image](https://user-images.githubusercontent.com/10378935/229953111-63b75134-806c-4ad3-8399-def09ed55ba4.png)
+
+
+
+![image](https://user-images.githubusercontent.com/10378935/229953157-a526210d-293d-4ab6-aee4-afd5599f1706.png)
+
+
+
 ### Technologies:
 
 Following technologies are used in implementing this pipeline
