@@ -16,7 +16,7 @@ Project answers the below questions and helps bikers to explore the NYC.
 
 
 ### Dashboard examples: 
-you can find the report [here] (https://lookerstudio.google.com/s/lUSsqr0LbT4)
+you can find the report [here](https://lookerstudio.google.com/s/lUSsqr0LbT4)
 
 ![image](https://user-images.githubusercontent.com/10378935/229953111-63b75134-806c-4ad3-8399-def09ed55ba4.png)
 
