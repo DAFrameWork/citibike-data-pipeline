@@ -9,7 +9,7 @@ This project has been developed as part of [2023 Data Engineering Zoomcamp](http
 
 
 ### Problem description:
-Citi Bike is NYC’s official bike share program, designed to give residents and visitors a fun, affordable and convenient alternative to walking, taxis, buses and subways. Citi Bike think that biking is the best way to see NYC! It's a quick and affordable way to get all around the city, and it even allows you to sightsee along the way. 
+Citi Bike is NYC’s official bike share program, designed to give residents and visitors a fun, affordable and convenient alternative to walking, taxis, buses and subways. Citi Bike believes that biking is the best way to see NYC! It's a quick and affordable way to get all around the city, and it even allows you to sightsee along the way. 
 Project answers the below questions and helps bikers to explore the NYC.
  
 * Where do Citi Bikers ride? 
@@ -127,5 +127,6 @@ Following technologies are used in implementing this pipeline
 
 8. Visualization 
 - You can now utilize the fact_citibike dataset and use it within Looker for visualizations.
+- you can find the report [here](https://lookerstudio.google.com/s/lUSsqr0LbT4)
 
 
