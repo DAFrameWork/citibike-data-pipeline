@@ -1,7 +1,7 @@
 ## NYC Citibike-Data-Pipeline
 
 ### Overview:
-This project has been developed as part of [2023 Data Engineering Zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp). The goal of the project is to implement NYC's Citibike data pipeline. Its a batch pipeline which extracts data from [NYC's Citibike Dataset](https://s3.amazonaws.com/tripdata/index.html) and stores the raw data into gcs bucket and bigquery. Stored data from bigquery will be transformed using dbt and transformed dataset will be used by looker data studio to develop visualizations for analytics purposes.
+This project has been developed as part of [2023 Data Engineering Zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp). The goal of the project is to implement NYC's Citibike data pipeline. Its a batch pipeline which extracts data from [NYC's Citibike Dataset](https://s3.amazonaws.com/tripdata/index.html) and stores the raw data into [Google Cloud Storage](https://cloud.google.com/storage) and [Google Big Query](https://cloud.google.com/bigquery). Stored data from bigquery will be transformed using [DBT](https://www.getdbt.com/) and transformed dataset will be used by [Google Looker data studio](https://lookerstudio.google.com/u/0/navigation/reporting) to develop visualizations for analytics purposes.
 
 ### Citibike Pipeline Architecture:
 
@@ -34,7 +34,7 @@ you can find the report [here](https://lookerstudio.google.com/s/lUSsqr0LbT4)
 Following technologies are used in implementing this pipeline
 
 * Cloud: [Goggle Cloud Platform](https://cloud.google.com/)
-  * Data Lake: [Goggle Cloud Storage](https://cloud.google.com/storage)
+  * Data Lake: [Google Cloud Storage](https://cloud.google.com/storage)
   * Data warehouse: [Google Big Query](https://cloud.google.com/bigquery)
 * [Terraform](https://www.terraform.io/): Infrastructure as code (IaC) - creates project configuration for GCP to bypass cloud GUI.
 * Workflow orchestration: [Prefect](https://www.prefect.io/)
