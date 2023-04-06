@@ -1,7 +1,7 @@
 ## NYC Citibike-Data-Pipeline
 
 ### Overview:
-This project has been developed as part of [2023 Data Engineering Zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp). The goal of the project is to implement NYC's Citibike data pipeline. Its a batch pipeline which extracts data from [here](https://s3.amazonaws.com/tripdata/index.html) and stores the raw data into gcs bucket and bigquery. Stored data from bigquery will be transformed using dbt and transformed dataset will be used by looker data studio to develop visualizations for analytics purposes.
+This project has been developed as part of [2023 Data Engineering Zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp). The goal of the project is to implement NYC's Citibike data pipeline. Its a batch pipeline which extracts data from [NYC's Citibike Dataset](https://s3.amazonaws.com/tripdata/index.html) and stores the raw data into gcs bucket and bigquery. Stored data from bigquery will be transformed using dbt and transformed dataset will be used by looker data studio to develop visualizations for analytics purposes.
 
 ### Citibike Pipeline Architecture:
 
