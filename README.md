@@ -1,8 +1,11 @@
 ## NYC Citibike-Data-Pipeline
 
 ### Overview:
-This project was built as part of the course [2023 Data Engineering Zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp). It's goal was to build a data pipeline that continuously fetched, transformed and loaded data into a data warehouse and visualized key insights from it. 
-Citibike data pipeline is an batch pipeline which extracts data from [here](https://s3.amazonaws.com/tripdata/index.html) and stores the raw data into gcs bucket and bigquery. Stored data from bigquery will be transformed using dbt and transformed dataset will be used by looker data studio to develop visualizations for analytics purposes.
+This project has been developed as part of [2023 Data Engineering Zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp). The goal of the project is to implement NYC's Citibike data pipeline. Its a batch pipeline which extracts data from [here](https://s3.amazonaws.com/tripdata/index.html) and stores the raw data into gcs bucket and bigquery. Stored data from bigquery will be transformed using dbt and transformed dataset will be used by looker data studio to develop visualizations for analytics purposes.
+
+### Citibike Pipeline Architecture:
+
+![image](https://user-images.githubusercontent.com/10378935/229990884-bd4dc8d5-482d-4ff7-8f46-cc4f0ef6981b.png)
 
 
 ### Problem description:
@@ -37,11 +40,6 @@ Following technologies are used in implementing this pipeline
 * Workflow orchestration: [Prefect](https://www.prefect.io/)
 * Data Transformation: [DBT](https://www.getdbt.com/)
 * Data Visualisation: [Google Looker data studio](https://lookerstudio.google.com/u/0/navigation/reporting)
-
-
-### Citibike Pipeline Architecture:
-
-![image](https://user-images.githubusercontent.com/10378935/229990884-bd4dc8d5-482d-4ff7-8f46-cc4f0ef6981b.png)
 
 
 ## Setup to run the project
