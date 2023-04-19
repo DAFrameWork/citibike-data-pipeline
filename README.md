@@ -57,14 +57,14 @@ Following technologies are used in implementing this pipeline
     ```
 
 3. Next you need to setup your Google Cloud environment
-- Create a Google Cloud Platform project, if you do not already have one(https://console.cloud.google.com/cloud-resource-manager)
+- Create a Google Cloud Platform project, if you do not already have one (https://console.cloud.google.com/cloud-resource-manager)
 - Configure Identity and Access Management (IAM) for the service account, provide the following privileges: 
   * BigQuery Admin
   * Storage Admin 
   * Storage Object Admin
 - Download the JSON credentials and save it somehwere you'll remember, which will be JSON key.
 - Install the [Google Cloud SDK](https://cloud.google.com/sdk/docs/install-sdk)
-- Configure the environment variable point to your GCP key(https://cloud.google.com/docs/authentication/application-default-credentials#GAC) and authenticate it using following commands
+- Configure the environment variable point to your GCP key (https://cloud.google.com/docs/authentication/application-default-credentials#GAC) and authenticate it using following commands
    ```bash
      export GOOGLE_APPLICATION_CREDENTIALS=<path_to_your_credentials>.json
      gcloud auth application-default login
